@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="Imagenes\Logo1.png" alt="Logo">
+    </header>
+    <main class="contenedor-Principal">
+        <div class="entrada">
+            <div>
+                <textarea  class="textarea1"  rows="20" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="botones"> 
+                <p><i class="fa-solid fa-circle-info"></i> Solo letras minusculas y sin acentos</p>
+                <button class="btn encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="btn desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                
+            </div>
+        </div>
+
+        <div class="salida">
+            <div>
+                <img src="Imagenes\Logo2.png" alt="Muñeco" >
+                <p style="font-weight: bold;">Ningun mensaje fue encontrado</p>
+                <p>Ingresa el texto que desea encriptar o desencriptar</p>
+            </div>
+            <div>
+                <textarea  cols="70%" name="" class="textarea2"></textarea>
+            </div>
+            <button onclick="copiarTexto()" class="btn btn-copiar">Copiar</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <footer>
+        <p>Contactos</p>
+        <a href="https://www.linkedin.com/in/juancvasquezg/" target="_blank">
+            <i class="fa-brands fa-linkedin iconogrande"></i>
+        </a>
+        <a class="git" href="https://github.com/JVG200327" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>

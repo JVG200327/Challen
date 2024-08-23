@@ -1,0 +1,129 @@
+*{
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    
+}
+
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.contenedor-Principal{
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    margin: 150px 0px 0px 20px;
+    
+}
+
+
+.contenedor-Principal textarea {
+    width: 100%;  
+    border: none;
+    resize: none;
+    color: rgb(255, 0, 0); 
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.btn {
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    white-space: nowrap;
+    height: 50px; 
+    width: 250px; 
+    font-weight: bold;
+    
+}
+
+.iconogrande{
+    font-size: 2.5rem;
+    color: #0a66c2;
+}
+
+.git{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.encriptar{
+    background-color: #050050; /* Color de fondo al pasar el mouse sobre el botón Encriptar */
+    color: white;
+}
+
+.desencriptar{
+    background-color: #bfbcec; /* Color de fondo al pasar el mouse sobre el botón Desencriptar */
+}
+
+.limpiar{
+    background-color: gray;
+}
+
+::placeholder{
+    color: darkblue;
+    font-size: 20px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+
+.salida{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: flex-end; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    background-color: white;
+    color: black;
+}
+
+.textarea2{
+    background: transparent;
+    
+}
+
+.hidden {
+    display: none;
+}
+
+footer{
+    color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    height: 5px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-Principal {
+        flex-direction: column; /* Las cajas se colocarán una debajo de la otra */
+    }
+
+    .entrada, .salida {
+        width: 100%; /* Las cajas tomarán todo el ancho del contenedor */
+    }
+}
